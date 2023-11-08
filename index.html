@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Conductor</title>
+</head>
+<body>
+    <div class="conductor">
+        <div class="header">
+            <img src="./img/left-arrow.svg" class="img" alt="">
+            <h1 class="title">Проводник</h1>
+        </div>
+        <div class="road" >
+            <img src="./img/home.svg" alt="home" class="root" id = 0>
+            <div class="path"></div>
+        </div>
+        <div class="menu">
+            <div class="menu_wrapper">
+                <button id="file">
+                    <img src="./img/File.svg" alt="">
+                </button>
+                <button id="folder">
+                    <img src="./img/Folder.svg" alt="">
+                </button>
+                <div>
+                    <input type="file" id="input"/>
+                </div>
+            </div>
+            
+            <div class="search">
+                <img src="./img/loupe.svg" alt="loupe">
+                <input class="input" type="search" >
+            </div>
+        </div>
+        <div class="window">
+            <div class="menu-search none">
+            </div>
+            <div class="panel">
+            
+            </div>
+            <div class="translucent_window">
+                <div class="replace none">
+                    <h1 class="replace_title">В папке назначения уже есть элемент с таким именем</h1>
+                    <div class="replace_actions">
+                        <div class="replace_confirm">Заменить файл в папке <br> назначения</div>
+                        <div class="replace_cancel">Отменить</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="context-menu none">
+            <ul>
+                <li id="rename" class="field">Переименовать</li>
+                <li id="remove" class="field">Удалить</li>
+            </ul>
+        </div>
+        
+
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+</html>
